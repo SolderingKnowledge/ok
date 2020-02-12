@@ -1,2 +1,1 @@
-My current code is one;
-My current code is two;
+There is going to be only B
