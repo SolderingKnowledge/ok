@@ -1,0 +1,3 @@
+{
+    "mongoSRV": "<connection-string-from-mongoDB-atlas>"
+}
