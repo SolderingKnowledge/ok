@@ -1,3 +1,4 @@
 {
-    "mongoSRV": "<connection-string-from-mongoDB-atlas>"
+    "mongoSRV": "connection-string-from-mongodb-atlas",
+    "jwtToken": "myJWTtoken"
 }
