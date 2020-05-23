@@ -16,7 +16,7 @@
 
 8 `npm i request` allows to make a http request to another API
 
-9 `npx create-react-app <frontend` create frontend app
+9 `npx create-react-app <frontend>` create frontend app
 
 10 There is a script `npm run both` in package.json => `backend: http://localhost:5000` & `frontend: http://localhost:3000` it will run both environments;
 
