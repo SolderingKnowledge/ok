@@ -1,4 +1,6 @@
 {
-    "mongoSRV": "connection-string-from-mongodb-atlas",
-    "jwtToken": "myJWTtoken"
+    "mongoSRV": "atlas-connection-string",
+    "jwtToken": "myJWTtoken",
+    "githubClientId": "github-client-id-string",
+    "githubClientSecret": "github-client-secret-string"
 }
