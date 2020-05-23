@@ -28,4 +28,4 @@
 
 
 
-## For now is full stack 
+## For now is full 
