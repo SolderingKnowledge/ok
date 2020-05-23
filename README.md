@@ -25,3 +25,7 @@
 # DB:
 
 1 `mongodb Atlas` all the settings for creating user and whitelisting your IP address are under security section.
+
+
+
+## For now is full stack CRUD operation testing
