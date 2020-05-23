@@ -6,8 +6,8 @@ class App extends Component {
     const {ctr}= this.props;
     return (
       <div className="App">
-        <button onClick = {this.props.onIncrementCounter}>incremental</button>
-        <button onClick = {this.props.onDecrementCounter}>decrement</button>
+        <button onClick = {this.props.onIncrementCounter}>increment by one</button>
+        <button onClick = {this.props.onDecrementCounter}>decrement by one</button>
         {ctr}
       </div>
     );
