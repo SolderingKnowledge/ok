@@ -12,7 +12,7 @@
 
 6 `npm i jsonwebtoken` pass along token for validation
 
-7 `npm i mongoose` for creating Models( Schemes) for DB to interact
+7 `npm i mongoose` for creating Models( Schemes) for DB and to interact with DB such as calling, changing basically CRUD operations
 
 8 `npm i request` allows to make a http request to another API
 
