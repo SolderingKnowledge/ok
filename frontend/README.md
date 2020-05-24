@@ -38,7 +38,11 @@ router.post('/', async (req, res) => {
 });
 
 /* 
-Adding cors is not a solution. You need to include the proxy "proxy" : "https://localhost:5000" in the package.json, you may need to restart or something or other-- but if you choose to use cors instead, you are allowing anyone to access your API. That means your database is wide open for people to poke around with. Passwords, emails, users, etc. It's all compromised.
+Adding cors is not a solution. You need to include the proxy "proxy" : "https://localhost:5000" in
+the package.json, you may need to restart or something or other-- but if you choose to use cors
+instead, you are allowing anyone to access your API. That means your database
+is wide open for people to poke around with. Passwords, emails, users, etc.
+It's all compromised.
 */
 ```
 
