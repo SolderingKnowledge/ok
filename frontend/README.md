@@ -11,3 +11,5 @@
 6 `npm i moment` for date time formating
 
 7 `npm i react-moment`
+
+8 `npm i uuid` universal id on the fly

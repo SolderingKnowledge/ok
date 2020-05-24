@@ -124,7 +124,7 @@ router.delete("/", auth, async (req, res)=> {
 })
 
 // route:           PUT api/profile/experience; like UPDATE
-// description:     Add profile experience
+// description:     Add experience to your profile
 // access:          Private
 router.put("/experience", auth, [
     check("title", "Title is required").not().isEmpty(),
@@ -168,7 +168,7 @@ router.delete("/experience/:exp_id", auth, async (req, res) => {
 })
 
 // route:           PUT api/profile/education; like UPDATE
-// description:     Add profile education
+// description:     Add education to your profile
 // access:          Private
 router.put("/education", auth, [
     check("school", "School is required").not().isEmpty(),
