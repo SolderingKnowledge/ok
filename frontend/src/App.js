@@ -1,28 +1,36 @@
-import React, { Component } from 'react';
-import {connect} from 'react-redux';
+import React, { useEffect } from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Navbar from './components/layout/Navbar';
+import Landing from './components/layout/Landing';
+import Routes from './components/routing/Routes';
 
-class App extends Component {
-  render(){
-    const {ctr}= this.props;
-    return (
-      <div className="App">
-        <button onClick = {this.props.onIncrementCounter}>increment by one</button>
-        <button onClick = {this.props.onDecrementCounter}>decrement by one</button>
-        {ctr}
-      </div>
-    );
-  }
-}
+// Redux
+import { Provider } from 'react-redux';
+import store from './store';
+import { loadUser } from './actions/auth';
+import setAuthToken from './utils/setAuthToken';
 
-const mapStateToProps = state => {
-  return { ctr: state.counter }; //state is the reducers
-}
+import './App.css';
 
-const mapDispatchToProps = dispatch =>{
-  return {
-    onIncrementCounter: ()=> dispatch({type: "INCREMENT"}),
-    onDecrementCounter: ()=> dispatch({type: "DECREMENT"})
-  }
-}
+const App = () => {
+  useEffect(() => {
+    setAuthToken(localStorage.token);
+    store.dispatch(loadUser());
+  }, []);
 
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+  return (
+    <Provider store={store}>
+      <Router>
+        <>
+          <Navbar />
+          <Switch>
+            <Route exact path="/" component={Landing} />
+            <Route component={Routes} />
+          </Switch>
+        </>
+      </Router>
+    </Provider>
+  );
+};
+
+export default App;

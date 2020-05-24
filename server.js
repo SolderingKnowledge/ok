@@ -14,7 +14,7 @@ app.get("/", (req, res)=> {
     return res.send("<h1>Home page<p>Welcome home</p><h1>");
 })
 
-// Making routes
+// Making routes => these serve as http://localhost:5000/api/auth => api/auth.js
 app.use("/api/auth", require("./routes/api/auth"));
 app.use("/api/posts", require("./routes/api/posts"));
 app.use("/api/profile", require("./routes/api/profile"));

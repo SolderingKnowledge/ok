@@ -58,6 +58,9 @@ router.post("/", [
     }
 })
 
+// route        GET api/users
+// description  send dummy message
+// access       Public
 router.get("/", (req, res) => {
     return res.send("User route")
 });
